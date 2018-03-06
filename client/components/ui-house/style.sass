@@ -1,0 +1,70 @@
+@import '../../style/app.sass' // To let you use variables
+	
+.ui-house
+	width: 33.33%
+	width: calc(100% / 3)
+	box-sizing: border-box
+	padding: 16px
+	.img-house
+		width: 100%
+		position: relative
+		> img
+			display: block
+			width: 100%
+			height: auto
+			max-height: 215px
+		> button
+			position: absolute
+			cursor: pointer
+			top: 17px
+			left: 17px
+			color: $medium-gray
+			background-color: $white
+			border: none
+			border-radius: 3px
+			padding: 8px 12px
+			font-family: inherit
+			font-size: 11px
+			font-weight: $semibold
+			box-shadow: 0 0 3px $light-gray
+
+
+	.content
+		padding: 30px
+		border: 1px solid $light-gray
+		border-top: none
+		> h3
+			margin: 6px 0 12px
+			font-size: 15px
+			line-height: 19px
+			font-weight: 400
+			word-break: break-all
+			+hyphens(auto)
+			min-height: 53px
+		> p
+			color: $light-gray
+			font-weight: $semibold
+			font-size: 12px
+			margin: 0 0 42px
+		> footer
+			+flex
+			justify-content: space-between
+			margin-bottom: 12px
+			height: 18px
+			> .price
+				font-size: 14px
+				color: $black
+				font-weight: $semibold
+			> .detail
+				color: $medium-gray
+				font-size: 15px
+				font-weight: $regular
+				+flex
+				> span
+					display: inline-block
+				> .rooms
+					border-right: 1px solid $light-gray
+					margin-right: 9px
+					padding-right: 14px
+				> .size
+					margin-right: -5px

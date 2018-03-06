@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import "mixins"
+@import "variables"
+
+
+// GRID
+.container-fluid
+	width: 100%
+	display: block
+	>img
+		position: absolute
+		top: 8px
+		left: 62px
+		right: 0
+		width: 1089px
+		display: none
+.container
+	max-width: 1080px
+	margin: 0 auto
+	.row
+		+flex
+		flex-flow: row wrap
+
+// GLOBAL
+body
+	font-family: 'Roboto', sans-serif
+	color: $black
+	
